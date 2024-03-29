@@ -7,23 +7,22 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Josefin Sans'>
   <title>Base Apparel coming soon page</title>
   <style>
-
-    /* @import url("https://fonts.google.com/specimen/Josefin+Sans"); */
-    /* @font-face {
-      font-family: 'JosefinSans';
-      src: url("https://fonts.google.com/specimen/Josefin+Sans");
-    } */
-
-    body{
+     body{
       width: 100vw;
       max-width: 2560px;
       display: flex;
       font-family: 'Josefin Sans';
+      background-image: url('./images/bg-pattern-desktop.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
     }
-    .words{
+
+    .words {
       width: 55vw;
       padding-left: 10rem;
+      position: relative;
     }
+
     h1{
       font-weight: 600;
       text-transform: uppercase;
@@ -31,18 +30,60 @@
       line-height: 1.8rem;
       letter-spacing: 1rem;
     }
-    .pink-h1{
+
+    .pink-h1 {
       color: hsl(0, 36%, 70%);
       font-weight: 300;
       margin-top: 18rem;
     }
-    p{
+    
+    p {
       width: 27vw;
       color: hsl(0, 36%, 70%);
       line-height: 1.7rem;
     }
 
-    .pic{
+    .btn-cover {
+      width: fit-content;
+      height: auto;
+      position: relative;
+      margin-top: 2.5rem;
+    }
+
+    input {
+      padding: 1rem 16rem 1rem 2rem;
+      border: 0.1px solid rgb(191, 191, 191);
+      border-radius: 50px;
+      border-color: hsl(0, 36%, 70%);
+      outline: none;
+    }
+
+    input::placeholder {
+      color: hsl(0, 36%, 70%);
+      opacity: 0.5;
+    }
+
+    .btn-clicker{
+      width: 6rem;
+      height: 3rem;
+      border-radius: 50px;
+      background:linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    img {
+      height: 1.5rem;
+    }
+
+    
+    .pic {
       width: 45vw;
       height: 100vh;
       background-image: url('./images/hero-desktop.jpg');
@@ -65,11 +106,12 @@
     <div class="btn-cover">
       <input type="text" placeholder="Email Address">
       <div class="btn-clicker">
-        
+        <img src="./images/icon-arrow.svg" alt="">
       </div>
     </div>
   </div>
   <div class="pic">
+    
   </div>
 </body>
 </html>
