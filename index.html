@@ -4,17 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Josefin Sans'>
+  <title>Base Apparel coming soon page</title>
+  <style>
+
+    /* @import url("https://fonts.google.com/specimen/Josefin+Sans"); */
+    /* @font-face {
+      font-family: 'JosefinSans';
+      src: url("https://fonts.google.com/specimen/Josefin+Sans");
+    } */
+
+    body{
+      width: 100vw;
+      max-width: 2560px;
+      display: flex;
+      font-family: 'Josefin Sans';
+    }
+    .words{
+      width: 55vw;
+      padding-left: 10rem;
+    }
+    h1{
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 4.6rem;
+      line-height: 1.8rem;
+      letter-spacing: 1rem;
+    }
+    .pink-h1{
+      color: hsl(0, 36%, 70%);
+      font-weight: 300;
+      margin-top: 18rem;
+    }
+    p{
+      width: 27vw;
+      color: hsl(0, 36%, 70%);
+      line-height: 1.7rem;
+    }
+
+    .pic{
+      width: 45vw;
+      height: 100vh;
+      background-image: url('./images/hero-desktop.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
 </head>
 <body>
-
-  <h1>We're coming soon</h1>
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
-  
+  <div class="words">
+    <h1 class="pink-h1">
+      We're
+    </h1> 
+    <h1>coming </h1>
+    <h1>soon</h1>
+    <p>
+      Hello fellow shoppers! We're currently building our new fashion store.
+      Add your email below to stay up-to-date with announcements and our launch deals.
+    </p>
+    <div class="btn-cover">
+      <input type="text" placeholder="Email Address">
+      <div class="btn-clicker">
+        
+      </div>
+    </div>
+  </div>
+  <div class="pic">
+  </div>
 </body>
 </html>
