@@ -106,6 +106,20 @@ img {
     height: 1.5rem;
 }
 
+.error-icon{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 1.7rem;
+    right: 7rem;
+    margin: auto;
+}
+
+small{
+    display: none;
+    margin: 1rem 0 0 2rem;
+}
+
 
 .pic {
     width: 45vw;
