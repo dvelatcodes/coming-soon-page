@@ -17,20 +17,13 @@ btn.addEventListener('click', () => {
         message.innerHTML = 'Special characters not allowed';
         message.style.display = 'block';
     }
-    else if (!formField.value.match(/[a-zA-Z][0-9]@gmail.com/) && !formField.value.match(/[a-zA-Z]@gmail.com/)) {
+    else if (!formField.value.match(/[a-zA-Z][0-9]*@gmail.com/)) {
         errorIcon.style.display = 'block';
         message.style.color = 'hsl(0, 93%, 68%)';
         message.innerHTML = 'Please provide a valid email';
         message.style.display = 'block';
     }
-    else if (formField.value.match(/[a-zA-Z][0-9]@gmail.com/)) {
-        errorIcon.style.display = 'none';
-        message.style.color = 'green';
-        message.innerHTML = "successfully filled";
-        message.style.display = 'block';
-        formField.value = ""
-    }
-    else if (formField.value.match(/[a-zA-Z]@gmail.com/)) {
+    else if (formField.value.match(/[a-zA-Z][0-9]*@gmail.com/)) {
         errorIcon.style.display = 'none';
         message.style.color = 'green';
         message.innerHTML = "successfully filled";
