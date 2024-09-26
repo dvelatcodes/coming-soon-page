@@ -64,14 +64,15 @@ p {
 }
 
 .btn-cover {
-    width: fit-content;
+    width: 25vw;
     height: auto;
     position: relative;
     margin-top: 2.5rem;
 }
 
 input {
-    padding: 1rem 16rem 1rem 2rem;
+    width: 100%;
+    padding: 1rem 0 1rem 2rem;
     border: 0.1px solid rgb(191, 191, 191);
     border-radius: 50px;
     border-color: hsl(0, 36%, 70%);

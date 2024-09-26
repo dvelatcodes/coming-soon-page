@@ -5,19 +5,22 @@ const message = document.querySelector('small');
 const errorIcon = document.querySelector('.error-icon');
 
 btn.addEventListener('click', () => {
+    // console.log(formField.value.charAt(formField.value.length - 1), Array.from(formField.value),
+    // formField.value.match(formField).input);
     if (formField.value == "") {
         errorIcon.style.display = 'block';
         message.style.color = 'hsl(0, 93%, 68%)';
         message.innerHTML = 'Form cannot be left empty';
         message.style.display = 'block';
     }
-    else if (formField.value.match(/[!-\-]|[:-\?]|[\[-`]|[{-~}]]/)) {
+    else if (formField.value.match(/[!-\-]|[:-\?]|[\[-`]|[{-~]/)) {
         errorIcon.style.display = 'block';
         message.style.color = 'hsl(0, 93%, 68%)';
         message.innerHTML = 'Special characters not allowed';
         message.style.display = 'block';
     }
-    else if (!formField.value.match(/[a-zA-Z][0-9]*@gmail.com/)) {
+    else if (!formField.value.match(/[a-zA-Z][0-9]*@gmail.com/)
+    ) {
         errorIcon.style.display = 'block';
         message.style.color = 'hsl(0, 93%, 68%)';
         message.innerHTML = 'Please provide a valid email';

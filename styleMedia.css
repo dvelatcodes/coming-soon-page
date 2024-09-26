@@ -8,6 +8,36 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .btn-cover{
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn-cover{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width:  576px) {
+    .btn-cover{
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width:  425px) {
+    .btn-cover{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:  320px) {
+    .btn-cover{
+        width: 90vw;
+    }
+}
+
 @media screen and (max-width : 985px) {
     body {
         padding-bottom: 3rem;
@@ -59,10 +89,6 @@
 
     p {
         width: 80vw;
-    }
-
-    input {
-        padding: 1rem 8rem 1rem 2rem;
     }
 
     .btn-clicker {
